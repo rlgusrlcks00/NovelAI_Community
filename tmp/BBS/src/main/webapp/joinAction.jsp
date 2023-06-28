@@ -18,8 +18,8 @@
     Connection con = null;
     PreparedStatement pstmt = null;
     Statement stmt = null;
-    StringBuffer SQL = new StringBuffer("INSERT INTO User (PW, User_name, Sex, PH, AD, NickName, Admin, Email) ");
-    SQL.append("VALUES (?, ?, ?, ?, ?, ?, ?, ?)");
+    StringBuffer SQL = new StringBuffer("INSERT INTO User (PW, User_name, Sex, PH, AD, NickName, Email) ");
+    SQL.append("VALUES (?, ?, ?, ?, ?, ?, ?)");
 
     String driverName = "com.mysql.jdbc.Driver";
     String dbURL = "jdbc:mysql://localhost:3306/jsp41";
@@ -38,8 +38,7 @@
         pstmt.setString(4, request.getParameter("PH"));
         pstmt.setString(5, request.getParameter("AD"));
         pstmt.setString(6, request.getParameter("NickName"));
-        pstmt.setString(7, request.getParameter("Admin"));
-        pstmt.setString(8, request.getParameter("Email"));
+        pstmt.setString(7, request.getParameter("Email"));
 
         int rowCount = pstmt.executeUpdate();
         if (rowCount == 1) {

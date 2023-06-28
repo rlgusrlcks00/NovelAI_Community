@@ -44,9 +44,6 @@
                         <input type="text" class="form-control" placeholder="닉네임" name="NickName" maxlength="20">
                     </div>
                     <div class="form-group">
-                        <input type="text" class="form-control" placeholder="관리자 여부" name="Admin" maxlength="10">
-                    </div>
-                    <div class="form-group">
                         <input type="email" class="form-control" placeholder="이메일" name="Email" maxlength="20">
                     </div>
                     <input type="submit" class="btn btn-primary form-control" value="회원가입">
